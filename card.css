@@ -1,0 +1,43 @@
+    #card {
+        margin: 8%;
+        padding: 0px 20px;
+        position: absolute;
+        height: auto;
+        width: 350px;
+        border-radius: 10px;
+        background-color: #D9FFFB;
+        background-size: 50vh, 70vh;
+        box-shadow: 0px 0px 20px #00463C;
+        transform: rotate(5deg);
+        top: 0px;
+        opacity: 0;
+        left: -200%;
+    }
+
+    .honey {
+        margin: auto;
+        padding: 10px;
+        display: block;
+        border-radius: 50%;
+        box-shadow: rgb(0, 70, 60) 0px 20px 30px -10px;;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    h4 {
+        text-align: center;
+        -webkit-text-fill-color: rgba(0, 200, 200, 0.1);
+        -webkit-background-clip: text;
+        background-image: url("https://i.pinimg.com/originals/e6/d9/bb/e6d9bb32c621edbd0152abb150a60c1e.gif");
+        font-family: 'Allura', cursive;
+        padding: -2%;
+        font-size: 19px;
+        overflow: hidden;
+    }
+
+    .card-show{
+        opacity: 1 !important;
+        left: 0 !important;
+        transition: all 2s;
+    }

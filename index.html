@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel='stylesheet' href='https://codepen.io/MAW/pen/XVRpEE.css'><link rel="stylesheet" href="./flower.css">
+    <script src="jquery.js"></script>
+  </head>
+  <body> 
+    <div id="container"></div>
+    <div class="parent">
+      <canvas id="canvas"></canvas>
+      <section class="above-fold">
+        <div class="wrap-present" onclick="playMusic()">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
+            </div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
+            </div>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text">Click the box to Open!!! Darling <3</p>
+      </section>
+
+      <div id="card">
+        <h4 class="title-card">💘little coder💘</h4>
+
+        <img
+          src="hot-girl.png"
+          class="honey"
+        />
+
+        <h4 class="content-card">
+          Happy Birthday Make A Wish. Dear brother, hope you receive everything
+          you wish for this year. You deserve the best! Thanks for being such a
+          great brother.💘
+        </h4>
+      </div>
+    </div>
+    <audio autoplay loop  id="playAudio">
+      <source src="nhacnen.mp3">
+    </audio>
+
+ 
+  </body>
+  <script src='https://codepen.io/MAW/pen/XVRpEE.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script><script  src="./flower.js"></script>
+  <script src="config.js"></script>
+  
+  <!-- <script src="canvas.js"></script> -->
+  <script src="present.js"></script>
+  
+
+  <script>
+    function playMusic(){
+      var myAudio = document.getElementById('playAudio');
+      if (myAudio.duration > 0 && !myAudio.paused) {
+          //Its playing...do your job
+
+      } else {
+        myAudio.play()
+        //Not playing...maybe paused, stopped or never played.
+
+      }
+      $('#container').fadeIn(2000);
+    }
+
+
+  </script>
+</html>
